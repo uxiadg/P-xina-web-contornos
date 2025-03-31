@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="gl">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Polimorfismo | 1- Introducción POO e UML </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="UXÍA DÍAZ GARCÍA" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 Portable - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-13"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegación</a></p>
+<header id="header" ><div id="headerContent">1- Introducción POO e UML</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Introducción a UML e POO</a></li>
+   <li class="current-page-parent"><a href="orientacin_a_obxectos.html" class="current-page-parent daddy">Orientación a obxectos</a>
+   <ul>
+      <li><a href="clases_e_obxectos.html" class="no-ch">Clases e obxectos</a></li>
+      <li><a href="constructores_e_destructores.html" class="daddy">Constructores e destructores</a>
+      <ul class="other-section">
+         <li><a href="exemplos_c.html" class="daddy">Exemplos C#</a>
+         <ul class="other-section">
+            <li><a href="constructor_clase_tempo.html" class="no-ch">Constructor clase tempo</a></li>
+            <li><a href="utilizacin_clase_tempo.html" class="no-ch">Utilización clase Tempo</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="abstraccin.html" class="daddy">Abstracción</a>
+      <ul class="other-section">
+         <li><a href="exemplo_c.html" class="no-ch">Exemplo C#</a></li>
+      </ul>
+      </li>
+      <li><a href="encapsulado.html" class="daddy">Encapsulado</a>
+      <ul class="other-section">
+         <li><a href="exemplo_c0.html" class="no-ch">Exemplo C#</a></li>
+      </ul>
+      </li>
+      <li><a href="herdanza.html" class="no-ch">Herdanza</a></li>
+      <li id="active"><a href="polimorfismo.html" class="active no-ch">Polimorfismo</a></li>
+      <li><a href="envo_de_mensaxes.html" class="no-ch">Envío de mensaxes</a></li>
+      <li><a href="relacins_entre_obxectos.html" class="no-ch">Relacións entre obxectos</a></li>
+   </ul>
+   </li>
+   <li><a href="mtodos_de_modelaxe.html" class="daddy">Métodos de modelaxe</a>
+   <ul class="other-section">
+      <li><a href="diagrama_de_fluxo_de_datos.html" class="no-ch">Diagrama de fluxo de datos</a></li>
+      <li><a href="diagramas_entidaderelacin.html" class="no-ch">Diagramas entidade-relación</a></li>
+      <li><a href="diagramas_hipo.html" class="no-ch">Diagramas HIPO</a></li>
+      <li><a href="diagramas_vtoc.html" class="no-ch">Diagramas VTOC</a></li>
+      <li><a href="diagramas_warnierorr.html" class="no-ch">Diagramas Warnier-Orr</a></li>
+   </ul>
+   </li>
+   <li><a href="_linguaxe_unificada_de_modelado_uml.html" class="daddy">Á Linguaxe Unificada de Modelado (UML)</a>
+   <ul class="other-section">
+      <li><a href="diagramas_do_uml.html" class="daddy">Diagramas do UML</a>
+      <ul class="other-section">
+         <li><a href="exemplos_de_diagramas_uml.html" class="no-ch">Exemplos de diagramas UML</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="herdanza.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="envo_de_mensaxes.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Polimorfismo</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id16">
+<div class="iDevice emphasis0" >
+<div id="ta16_127_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="font-size: 14pt;"> <img src="Polimorfismo.jpg" width="886" height="486" style="float: left;" />O polimorfismo refírese á <span style="color: #008000; background-color: #ccffcc;"><strong>capacidade para que varias clases derivadas dunha antecesora </strong></span></span><span style="color: #008000; background-color: #ccffcc;"><strong><span style="font-size: 14pt; background-color: #ccffcc;">implementen un mesmo método de forma diferente. </span></strong></span></p>
+<p><span style="font-size: 14pt;">Por exemplo, podemos crear dúas clases distintas: <strong>Peixe</strong> e <strong>Ave</strong> que herdan da superclase </span><span style="font-size: 14pt;"><strong>Animal</strong>. A clase Animal ten o método abstracto mover que se implementa de forma distinta </span><span style="font-size: 14pt;">en cada unha das subclases (peces e aves móvense de forma distinta). </span><span style="font-size: 14pt;">Un concepto que ás veces se confunde co polimorfismo é a sobrecarga de métodos. A </span><span style="font-size: 14pt;">sobrecarga de métodos permite definir dous ou máis métodos co mesmo nome, pero que </span><span style="font-size: 14pt;">difiren en cantidade ou tipo de parámetros. Esta característica da linguaxe facilítanos a </span><span style="font-size: 14pt;">implementación de algoritmos que cumpren a mesma función pero que difiren nos parámetros.</span></p>
+<p><span style="font-size: 14pt;"></span><span style="font-size: 14pt;">O polimorfismo e a sobrecarga diferéncianse en que:</span></p>
+<p style="padding-left: 60px;"><span style="font-size: 14pt;">– A sobrecarga dáse sempre dentro dunha soa clase, mentres que o polimorfismo dáse </span><span style="font-size: 14pt;">entre clases distintas.</span><br /><span style="font-size: 14pt;">– No polimorfismo o nome do método e os seus parámetros coinciden, na sobrecarga </span><span style="font-size: 14pt;">coincide o nome do método pero nunca os parámetros (poden diferir en cantidade ou </span><span style="font-size: 14pt;">no tipo de datos).</span></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Licenciado baixo a</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licenza Creative Commons Atribución Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="herdanza.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="envo_de_mensaxes.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Feito con eXeLearning<span> (Nova xanela)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
